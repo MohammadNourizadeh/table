@@ -34,7 +34,9 @@ const Table = () => {
         temp[index].age = age;
         setNewUser(temp);
         setIsEditing(false);
-
+        setFName('');
+        setLName('');
+        setAge('');
     }
 
     return (
