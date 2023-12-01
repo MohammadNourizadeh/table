@@ -4,7 +4,7 @@ import MyContext from '../../contexts/MyContext';
 
 const Form = () => {
 
-    const { setNewUser, fName, setFName, lName, setLName, age, setAge } = useContext(MyContext);
+    const { setNewUser, fName, setFName, lName, setLName, age, setAge, isEditing } = useContext(MyContext);
 
     const userAddHandler = (e) => {
         e.preventDefault();

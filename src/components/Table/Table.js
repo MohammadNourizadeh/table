@@ -56,13 +56,13 @@ const Table = () => {
                         <tr key={item.id}>
                             <td className="text-center">{counter(item)}</td>
                             {isEditing !== item.id && <td className="text-center w-25">{item.fName}</td>}
-                            {isEditing === item.id && <td className="text-center w-25"><input type='text' className='w-75 text-center' value={fName} onChange={(e) => { setFName(e.target.value) }} /></td>}
+                            {isEditing === item.id && <td className="text-center w-25"><input type='text' className='w-75 text-center rounded-4' value={fName} onChange={(e) => { setFName(e.target.value) }} /></td>}
 
                             {isEditing !== item.id && <td className="text-center w-25">{item.lName}</td>}
-                            {isEditing === item.id && <td className="text-center w-25"><input type='text' className='w-75 text-center' value={lName} onChange={(e) => { setLName(e.target.value) }} /></td>}
+                            {isEditing === item.id && <td className="text-center w-25"><input type='text' className='w-75 text-center rounded-4' value={lName} onChange={(e) => { setLName(e.target.value) }} /></td>}
 
                             {isEditing !== item.id && <td className="text-center w-25">{item.age}</td>}
-                            {isEditing === item.id && <td className="text-center w-25"><input type='text' className='w-75 text-center' value={age} onChange={(e) => { setAge(e.target.value) }} /></td>}
+                            {isEditing === item.id && <td className="text-center w-25"><input type='text' className='w-75 text-center rounded-4' value={age} onChange={(e) => { setAge(e.target.value) }} /></td>}
 
                             {isEditing !== item.id && <td className="text-center"><a href="#" className="btn btn-outline-success w-100" onClick={() => { editHandler(item) }}>edit</a></td>}
                             {isEditing === item.id && <td className="text-center"><a href="#" className="btn btn-outline-success w-100" onClick={saveHandler}>save</a></td>}
